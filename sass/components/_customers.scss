@@ -14,11 +14,22 @@
     color: $color-brend-text;
 }
 
+.customers__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
-  @media screen and (min-width: 1200px) {
-    .customers__row {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (min-width: $desktop) {
+          flex-wrap: nowrap;
+          justify-content: center;
+  }
+
+  &_list-card {
+    width: calc((100% - 30px) / 2);
+
+     @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      width: calc((100% - 60px) / 3);
+     }
   }
    }
 

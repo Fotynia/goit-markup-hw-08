@@ -54,11 +54,11 @@
                     flex-wrap: wrap;
                   }
                   
-                  @media screen and (min-width: 1200px) {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 30px; 
-                 }
+                //   @media screen and (min-width: 1200px) {
+                //     display: flex;
+                //     flex-wrap: wrap;
+                //     gap: 30px; 
+                //  }
                 }
 
 
@@ -67,12 +67,13 @@
                       width: 270px;
                      
                     @media screen and (min-width: 768px) {
-                      width: 50%;
+                      flex-basis: calc((100% - 60px) / 2);
+                      margin: 30px;
                   }
 
-                  @media screen and (min-width: 1200px) {
-                     flex-basis: calc((100% - 90px) / 4);
-                }
+                //   @media screen and (min-width: 1200px) {
+                //      flex-basis: calc((100% - 90px) / 4);
+                // }
                 }
                          
 .our-advantages__text {
