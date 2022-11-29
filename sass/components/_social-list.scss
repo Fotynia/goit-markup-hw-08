@@ -1,0 +1,44 @@
+.social-list {
+    display: flex;
+    margin-right: 32px;
+    margin-left: 32px;
+    gap: 10px;
+}  
+    
+.social-list__card {
+    display: block;
+    flex-basis: calc((100% - 30px) / 4);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    }
+
+    .social-list__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 44px;
+    height: 44px;
+    
+
+    &__icon:hover {
+    background-color: $color-accent;
+    border-radius: 50%;
+    }
+    
+    &__icon:hover &__svg{
+     fill: $color-brend;
+    }
+}
+
+.social-list__svg {
+    fill: #afb1b8;
+    width: 20px;
+    height: 20px;
+    }
+

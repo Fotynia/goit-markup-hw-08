@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    background-color: $color-brend;
+    color: $color-brend-text;
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: 0.03em;
+    box-sizing: inherit;    
+}
+
+.container-header {
+    // display: flex;
+    }
+    
+    .header {
+        background-color: $color-background; 
+        border-bottom: 1px solid #ECECEC;
+
+        .logo {
+            margin-right: 93px;
+            padding-top: 24px;
+            padding-bottom: 25px;
+            color: $color-accent;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            text-decoration: none;
+        }
+        
+        .logo__word {
+            color: $color-brend-text;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            text-decoration: none;
+        }
+    }
+    
+   
+    
+       

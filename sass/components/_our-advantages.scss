@@ -1,0 +1,86 @@
+      
+       .our-advantages {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+       .our-advantages__title--visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+      
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+       }
+
+       .our-advantages__cards {
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        border:1px solid #EEEEEE;
+        border-width: 0px 1px 1px 1px;
+        background-color:#F5F4FA;
+        gap: 30px;
+        margin-bottom: 25px; 
+       } 
+
+       .our-advantages__icon {
+       background-position: center;
+       height: 70px;
+       width: 70px;
+       background-color:#F5F4FA;
+       }
+
+               .our-advantages__title {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14;
+                text-transform: uppercase;
+                color: $color-brend-text;
+                margin-bottom: 10px;
+                 }
+
+               .our-advantages__list {
+                @media screen and (min-width: 768px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                  }
+                  
+                  @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px; 
+                 }
+                }
+
+
+                 .our-advantages__column {
+                      display: block;
+                      width: 270px;
+                     
+                    @media screen and (min-width: 768px) {
+                      width: 50%;
+                  }
+
+                  @media screen and (min-width: 1200px) {
+                     flex-basis: calc((100% - 90px) / 4);
+                }
+                }
+                         
+.our-advantages__text {
+            line-height: 1.71;
+            color: #757575;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+

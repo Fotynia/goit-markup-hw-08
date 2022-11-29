@@ -1,0 +1,131 @@
+/* Footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+
+    .logo {
+        display: inline-block;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+            color: $color-accent;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            text-decoration: none;
+     }
+    
+     .logo__word {
+        color: $color-brend;
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;              
+    } 
+}
+  
+.adress__post,
+.adress__mails,
+.adress__phones {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    }
+
+.adress__post {
+color: $color-brend;
+}
+
+.adress__post:hover,
+.adress__mails:hover,
+.adress__phones:hover,
+.adress__post:focus,
+.adress__mails:focus,
+.adress__phones:focus {
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.02em;
+        color:$color-accent;
+}
+
+.adress__list {
+    display: inline-block;
+    }
+
+.adress__item  {
+    margin-bottom: 9px;
+}
+
+.adress__item:last-child {
+    margin-bottom: 0px;
+}
+
+    /* icons */
+
+    .container-footer-insta__title {
+        display: inline-block;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $color-brend;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    } 
+    
+    .container-footer-insta__social-list {
+        display: block;
+    }
+
+    .social-list__icon {
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        fill: $color-brend;
+    }
+
+    .social-list__icon:hover {
+        background: $color-accent;
+    }
+
+    .social-list__icon:focus {
+        background: $color-accent;
+    }
+  
+
+     .social-list {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    
+    .social-list__card {
+        flex-basis: calc((100% - 30px) / 4);     
+    }
+
+    .container-footer-insta {
+        display: block;
+        width: 206px;
+        justify-content: center;
+        margin-left: 70px;       
+      }
+
+      .container-footer {
+        display: block;
+       }
+
+      .footerlogo {
+        // display: flex;
+        // align-items: baseline;
+      }
+
