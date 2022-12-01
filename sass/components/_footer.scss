@@ -3,9 +3,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2F303A;
+    text-align: center;
+    margin: 0 auto;
 
     .logo {
         display: inline-block;
+        
         margin-right: auto;
         margin-bottom: 20px;
         padding-top: 0px;
@@ -125,6 +128,7 @@ color: $color-brend;
        }
 
       .footerlogo {
+        text-align: center;
         // display: flex;
         // align-items: baseline;
       }

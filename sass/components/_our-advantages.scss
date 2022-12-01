@@ -19,7 +19,8 @@
        }
 
        .our-advantages__cards {
-        // display: flex;
+        position: relative;
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 270px;
@@ -30,10 +31,12 @@
         background-color:#F5F4FA;
         gap: 30px;
         margin-bottom: 25px; 
+        transform: translateY(-20%);
        } 
 
        .our-advantages__icon {
        background-position: center;
+       text-align: center;
        height: 70px;
        width: 70px;
        background-color:#F5F4FA;
@@ -49,31 +52,39 @@
                  }
 
                .our-advantages__list {
+               
                 @media screen and (min-width: 768px) {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
                   }
                   
-                //   @media screen and (min-width: 1200px) {
-                //     display: flex;
-                //     flex-wrap: wrap;
-                //     gap: 30px; 
-                //  }
-                }
-
+                  @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                  }
+                   }
 
                  .our-advantages__column {
                       display: block;
                       width: 270px;
+                      margin-right: auto;
+                      margin-left: auto;
                      
                     @media screen and (min-width: 768px) {
-                      flex-basis: calc((100% - 60px) / 2);
-                      margin: 30px;
+                    width: calc((100% - 30px) / 2);
                   }
 
-                //   @media screen and (min-width: 1200px) {
-                //      flex-basis: calc((100% - 90px) / 4);
-                // }
+                  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+                  //   width: calc((100% - 30px) / 2);
+                  // }
+
+                  @media screen and (min-width: 1200px) {
+                   width: calc((100% - 90px) / 4);
+                }
                 }
                          
 .our-advantages__text {

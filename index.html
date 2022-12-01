@@ -17,12 +17,28 @@
         <div class="container container-header">
              <nav class="header__nav">
         <a href="./portfolio.html" class="logo">Web<span class="logo__word logo__word--black">studio</span></a>
+        
+  <button type="button" class="header_menu-button is-open"
+  aria-expanded="false"
+  aria-controls="menu-container"
+          data-menu-button>
+      <svg width="40"
+           height="40"
+           aria-label="Перемикач мобільного меню">
+        <use class="header_icon-crossm" href="./img/symbol-defs.svg#icon-cross"></use>
+        <use class="header_icon-menu" href="./img/symbol-defs.svg#icon-menu"></use>
+      </svg>
+  </button>
+  <div class="menu-container" id="menu-container" data-menu>
+    <div class="header_navigation">
         <ul class="header__site-nav-list">
             <li class="header__site-nav-item"><a href="" class="header__link header__link--current">Студія</a></li>
             <li class="header__site-nav-item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
             <li class="header__site-nav-item"><a href="" class="header__link">Контакти</a></li>
         </ul> 
+    </div>
          </nav>
+         <div class="header_connection">
     <ul class="header__contacts">
         <li class="header__contacts-item">
         <svg class="header__svgadres">
@@ -35,6 +51,8 @@
             </svg>
             <a href="tel:+380961111111" class="header__phone">tel:+380961111111</a></li>
     </ul>
+    </div>
+</div>
        </div>
       </header> 
       <!--Секція Герой-->
@@ -404,5 +422,6 @@
         </div>
     </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
         </body>
         </html>

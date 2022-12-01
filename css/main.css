@@ -396,15 +396,26 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .our-advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .our-advantages__column {
   display: block;
   width: 270px;
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
 }
-
-.our-advantages__list {
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .our-advantages__column {
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    margin: 30px;
+  }
 }
 
 .our-advantages__text {
@@ -417,6 +428,11 @@ body {
 .what-we-do {
   padding-bottom: 94px;
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 1200px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
 .what-we-do__title {
@@ -515,6 +531,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -522,6 +545,7 @@ img {
 }
 
 .team__men-item {
+  display: inline-block;
   margin-right: 30px;
 }
 
@@ -538,7 +562,7 @@ img {
 }
 
 .team__profi-name {
-  display: block;
+  display: inline-block;
   padding-top: 30px;
   background: #FFFFFF;
   padding-bottom: 30px;
@@ -680,12 +704,36 @@ img {
   color: #212121;
 }
 
+.customers__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.customers__row .customers__list-card {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__row .customers__list-card {
+    width: calc((100% - 60px) / 3);
+  }
+}
+
 .customers__list-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: calc((100% - 150px) / 6);
-      flex-basis: calc((100% - 150px) / 6);
   height: 92px;
   width: 170px;
   -webkit-box-pack: center;
