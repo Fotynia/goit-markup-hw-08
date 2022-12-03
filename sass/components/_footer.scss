@@ -30,7 +30,13 @@
         line-height: 1.19;
         text-decoration: none;              
     } 
+    }
+
+@media screen and (min-width: 480px) {
+    .footer {
+        text-align: center;
 }
+ }
   
 .adress__post,
 .adress__mails,
@@ -108,8 +114,10 @@ color: $color-brend;
 
      .social-list {
         display: flex;
-        justify-content: center;
+        justify-content: s;
         gap: 10px;
+        flex-direction: row-reverse;
+
       }
     
     .social-list__card {
@@ -129,7 +137,7 @@ color: $color-brend;
 
       .footerlogo {
         text-align: center;
-        // display: flex;
-        // align-items: baseline;
+        display: flex;
+        align-items: baseline;
       }
 

@@ -31,8 +31,7 @@
         background-color:#F5F4FA;
         gap: 30px;
         margin-bottom: 25px; 
-        transform: translateY(-20%);
-       } 
+        } 
 
        .our-advantages__icon {
        background-position: center;
@@ -40,6 +39,7 @@
        height: 70px;
        width: 70px;
        background-color:#F5F4FA;
+       transform: translate(90px, 23px);
        }
 
                .our-advantages__title {
@@ -75,7 +75,7 @@
                       margin-left: auto;
                      
                     @media screen and (min-width: 768px) {
-                    width: calc((100% - 30px) / 2);
+                    width: calc((100% - 60px) / 2);
                   }
 
                   // @media screen and (min-width: 768px) and (max-width: 1199px) {
