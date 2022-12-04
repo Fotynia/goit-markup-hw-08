@@ -19,11 +19,10 @@
        }
 
        .our-advantages__cards {
-        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 270px;
+        width: 450px;
         height: 120px;
         margin-bottom: 30px;
         border:1px solid #EEEEEE;
@@ -31,28 +30,41 @@
         background-color:#F5F4FA;
         gap: 30px;
         margin-bottom: 25px; 
-        } 
+
+        @media screen and (min-width: 768px) {
+          width: 354px;
+         }
+
+        @media screen and (min-width: 1200px) {
+          width: 270px;
+        }  
+        }
+    
 
        .our-advantages__icon {
-       background-position: center;
-       text-align: center;
+      //  background-position: center;
+      //  text-align: center;
        height: 70px;
        width: 70px;
        background-color:#F5F4FA;
-       transform: translate(90px, 23px);
+      //  transform: translate(90px, 23px);
        }
 
-               .our-advantages__title {
+         .our-advantages__title {
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 1.14;
                 text-transform: uppercase;
                 color: $color-brend-text;
                 margin-bottom: 10px;
+
+                @media screen () {
+                  
+                }
+                text-align: left;
                  }
 
-               .our-advantages__list {
-               
+          .our-advantages__list {
                 @media screen and (min-width: 768px) {
                     display: flex;
                     flex-wrap: wrap;
@@ -61,26 +73,19 @@
                   }
                   
                   @media screen and (min-width: 1200px) {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
                     gap: 30px;
                   }
                    }
 
-                 .our-advantages__column {
+            .our-advantages__column {
                       display: block;
                       width: 270px;
                       margin-right: auto;
                       margin-left: auto;
                      
-                    @media screen and (min-width: 768px) {
+                   @media screen and (min-width: 768px) {
                     width: calc((100% - 60px) / 2);
                   }
-
-                  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-                  //   width: calc((100% - 30px) / 2);
-                  // }
 
                   @media screen and (min-width: 1200px) {
                    width: calc((100% - 90px) / 4);
@@ -92,6 +97,7 @@
             color: #757575;
             margin: 0px;
             padding: 0px;
+            text-align: left;
         }
 
 

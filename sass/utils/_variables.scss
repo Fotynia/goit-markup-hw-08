@@ -36,7 +36,7 @@ ul {
      padding-right: 15px;
      margin-left: 0 auto;
      margin-right: 0 auto;   
-    } 
+    
     @media screen and (max-width: 479px) {
         width: 100vw;
         margin: 0;
@@ -68,7 +68,13 @@ ul {
         width: 1200px; 
 }
 }
+ }
 
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
 h1,
 h2,
