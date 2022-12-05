@@ -15,7 +15,7 @@
     <!-- шапка сайту-->
     <header class="header">
         <div class="container container-header">
-             <nav class="header__nav">
+            
         <a href="./portfolio.html" class="logo">Web<span class="logo__word logo__word--black">studio</span></a>
         
         <!-- Mobail-menu -->
@@ -28,6 +28,7 @@
   </button>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <div class="menu-container-block">
+        <nav class="header__nav">
             <button class="menu-close js-close-menu"
             aria-expanded="false"
             aria-controls="mobile-menu">
@@ -53,8 +54,18 @@
             </svg>
             <a href="tel:+380961111111" class="header__phone">tel:+380961111111</a></li>
     </ul>
+    <ul class="header_menu-social">
+        <li class="header_soc-item">
+             <a href="" class="header_soclink">Instagram</a></li>
+           <li class="header_soc-item">
+                <a href="" class="header_soclink">Twitter</a></li>
+             <li class="header_soc-item">
+                 <a href="" class="header_soclink">Facebook</a></li> 
+               <li class="header_soc-item">
+                  <a href="" class="header_soclink">Linkedin</a></li>   
+            </ul>
+        </div>
     </div>
-</div>
        </div>
       </header> 
       <!--Секція Герой-->
@@ -127,7 +138,7 @@
         <li class="what-we-do__card">
             <div class="what-we-do__thumb">
                 <img src="./img/we-do-s-img.jpg" 
-                srcset="./img/we-do-s-img.jpg 1x, ././img/we-do-s-img@2x.jpg 2x"
+                srcset="./img/we-do-s-img.jpg 1x, ./img/we-do-s-img@2x.jpg 2x"
                 alt="програміст обирає колір з палітри кольорів на планшеті" width="370" height="294">
                 <div class="what-we-do__title-thumb"><p class="what-we-do__lable">Дизайнерські рішення</p>  
             </div>
@@ -141,8 +152,11 @@
     <div class="container">
         <h2 class="team__title">Наша команда</h2>
     <ul class="team__list">
-        <li class="team__men-item"><img src="./img/img8.jpg" alt="усміхнений чоловік в окулярах 35 років" width="270">
-            <div class="team__profi-name"><h3 class="team__title-name">Ігор Дем'яненко</h3>
+        <li class="team__men-item"><img src="./img/team-mob-x.jpg" 
+            srcset="./img/team-mob-x.jpg 1x, ./team-mob-@2x.jpg 2x"
+                alt="усміхнений чоловік в окулярах 35 років" width="450" height="468">
+            
+                <div class="team__profi-name"><h3 class="team__title-name">Ігор Дем'яненко</h3>
                  <p class="team__text">Product Designer</p>
                  <ul class="social-list">
                     <li class="social-list__card"> 

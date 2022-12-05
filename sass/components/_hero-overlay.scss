@@ -1,14 +1,49 @@
 .hero__overlay {
-    height: 600px;
+    // height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)),url(../img/img1.jpg);
+     rgba(47, 48, 58, 0.4)),url(../../img/mob-x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;  
- }
+ 
+ @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),url(../../img/mob-@2x.jpg);
+    }
+
+    @media screen and (min-width: 480px) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),url(../../img/tab-x.jpg);
+      height: 480px; 
+    }
+ 
+    @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),url(../../img/tab-@2x.jpg);
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),url(../../img/desk-x.jpg);
+      height: 600px; 
+      padding: 200px 0;
+    }
+ 
+    @media screen and (min-device-pixel-ratio: 2),
+     screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),url(../../img/desk-@2x.jpg);
+    }
+  }
+
 
 .hero {
     padding-top: 200px;
@@ -19,13 +54,19 @@
 
  .hero-title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36; 
+        font-size: 26px;
+        line-height: 1.61; 
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $color-brend;
         margin-bottom: 35px;
+
+        @media screen and (min-width: 1200px) {
+          min-width: 696px;
+          font-size: 44px;
+          line-height: 1.36;
+         }
        }
 
        .button {
@@ -43,10 +84,9 @@
         border-radius: 4px;
       }
     
-
     .hero__button {
         display: inline-block;
-        width: 216px;
+        width: 200px;
         height: 50px;
         font-family: inherit;
         font-weight: 700;
