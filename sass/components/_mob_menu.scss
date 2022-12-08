@@ -1,0 +1,215 @@
+
+// MOBILE-MENU 
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    // max-height: 796px;
+    padding: 32px;
+    
+    background-color: #FFFFFF;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #FFFFFF;
+}
+
+.menu-toggle {
+    position: absolute;
+ left: 90%;
+ transform: translateY(-88px);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+.menu-toggle-svg {
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.menu-toggle .menu-toggle-svg:hover,
+.menu-toggle .menu-toggle-svg:focus {
+    color: $color-accent;
+    cursor: pointer;
+   
+}
+
+.menu-container .is-open {
+    transform: translateX(0);
+}
+
+// .menu-container .menu-toggle {
+//     color: rgb(203, 32, 32);
+// }
+
+.mobile-menu .header__phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+}
+
+.menu-close {
+    position: absolute;
+    left: 90%;
+    top: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.menu-close .menu-close-svg:hover,
+.menu-close .menu-close-svg:focus {
+    color: $color-accent;
+    cursor: pointer;
+}
+
+        
+        // MENU-TOP
+        .mob-menu-top__site-nav-list {
+            margin-bottom: 36px;
+        }
+
+.mob-menu-top__mob-item {
+        max-width: 139px;
+        height: 48px;
+        padding-left: 40px;
+        padding-top: 48px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;      
+    }
+
+  .mob-menu-top__link {
+    color: $color-brend-text;
+    text-decoration: none; 
+    cursor: pointer;
+  }
+
+  .mob-menu-top__link--current {
+    color: $color-accent;
+  }
+
+//   MENU-BOTTOM
+    .mob-menu-bottom {
+        margin-top: 306px;
+    }
+
+    .mob-menu-bottom__contacts{
+        text-align: left;
+        padding-left: 40px;
+    }
+    .mob-menu-bottom__contacts-item {
+        margin-bottom: 32px;
+    }
+.mob-menu-bottom__contacts-item:last-child {
+    margin-bottom: 0pt;
+}
+
+        .mob-menu-bottom__phone {
+        max-width: 296px;
+        height: 40px;
+        left: 40px;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $color-accent;
+        text-decoration: none;   
+    }
+
+    .mob-menu-bottom__mail {
+    max-width: 231px;
+    height: 28px;
+    left: 40px;
+    margin-top: 32px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    }
+
+//    Twitter Facedook
+
+.mob-menu-bottom_menu-social {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 83px;
+    justify-content: space-between;
+    margin-top: 64px;
+    padding-bottom: 48px;
+    
+}
+
+.mob-menu-bottom_soc-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.mob-menu-bottom_soc-item:last-child {
+padding-right: 0px;
+border-right: none;
+}
+
+.mob-menu-bottom_soc-item:first-child {
+    padding-left: 0px;
+}
+
+.mob-menu-bottom_soclink {
+    text-decoration: none;
+    color: $color-accent;
+}

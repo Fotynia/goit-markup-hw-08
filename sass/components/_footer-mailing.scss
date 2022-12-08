@@ -1,83 +1,93 @@
 .container-mailing-list {
-    display: block;
+  display: block;
+  height: 86px;
+ 
+  @media screen and (min-width: 1200px) {
     width: 570px;
-    height: 86px;
     margin-left: 93px;
-    }
+  }
+}
 
-    .container-mailing-list__title{
-font-weight: 700;
-line-height: 1,14;
-text-transform: uppercase;
-margin-bottom: 20px;
-color: $color-brend;
-    }
+.container-mailing-list__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $color-brend;
+}
 
-  .container-mailing-list__input {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    font: inherit;
-    background: #2F303A;
-    }
+.container-mailing-list__input {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font: inherit;
+  background: #2F303A;
+}
 
     .container-mailing-list__form {
-     
-      text-align: center;
-        // display: flex;
-        // align-items: baseline;
-       }
-       
-  .button__label {
-font-weight: 700;
-font-size: 16px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: $color-brend;
-  }
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
+      
+       @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+          }
+        }
 
- 
-  .container-mailing-list__form [placeholder] {
-    display: block;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-    margin-right: 0px;
-  }
+.button__label {
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color-brend;
+}
 
-  .container-mailing-list__button {
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 28px;
-    background: $color-accent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    margin-left: 12px;
-    border: none;
-   }
+// .footer-label {
+// width: 358px;
+// margin-right: 0px;
+// }
 
-  .button__svg {
-    display: block;
-    margin-left: 10px;
-  }
+.container-mailing-list__form [placeholder] {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 0px;
+}
 
-  .container-mailing-list__button:hover { 
-        background: $color-accent;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        cursor: pointer;
-    }
+.container-mailing-list__button {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  background: $color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  border: none;
+}
 
+.button__svg {
+  display: block;
+  margin-left: 10px;
+}
+
+.container-mailing-list__button:hover {
+  background: $color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -10,11 +10,18 @@
     letter-spacing: 0.02em; 
     color: #757575;
     text-decoration: none;
+
+    @media screen and (max-width: 1199px) {
+        padding-top: 21px;
+        padding-bottom: 0px;
+        margin-left: 8px;
+        // margin-right: ;
+    }
     }
  
 .header__mail:hover, 
 .header__mail:focus {
-      color: $color-accent;
+    color: $color-accent;
 }
 
 .header__phone {
@@ -29,6 +36,11 @@
     letter-spacing: 0.02em; 
     color: #757575;
     text-decoration: none;  
+
+    @media screen and (max-width: 1199px) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+}
 }
 
 .header__phone:hover, 
@@ -39,11 +51,26 @@
 .header__contacts {
 display: flex;
 margin-left: auto;
+@media screen and (max-width: 767px) {
+    display: none;
+}
+@media screen and (min-width:768px) {
+    display: block;
+    margin-bottom: 10px;
+    }
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
 }
 
-.header__contacts-item {
+    .header__contacts-item {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        align-items: baseline;
+        align-items: flex-end;
+        }
     }
     
     .header__contacts-item:hover {
@@ -52,6 +79,10 @@ margin-left: auto;
 
 .header__contacts-item + .header__contacts-item {
 margin-left: 50px;
+
+@media screen and (max-width: 1199px) {
+        margin-left: 0px;
+    }
 }
 
 .header__svgadres{
