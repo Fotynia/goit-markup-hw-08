@@ -2,6 +2,9 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
+        @media screen and (max-width: 1199px) {
+            padding: 60px 0px 60px;
+        }
 }
 
 .team__title {
@@ -27,57 +30,62 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
-        max-width: 354px;
-        width: 100%;
+    max-width: 354px;
+    width: 100%;
         // height: 536px;
-
         @media screen and (max-width: 767px) {
-        margin-bottom: 30px;
-        }
-    
+            }
+
         @media screen and (min-width: 768px) {
             width: calc((100% - 60px) / 2);
         }
-    
         @media screen and (min-width: 1200px) {
             width: calc((100% - 90px) / 4);
-        }
+            }
        }
 
     .team__list {
         margin-top: 0px;
+            @media screen and (max-width: 767px) {
+                transform: translateX(12%);
+            }
 
-        @media screen and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 gap: 30px;
-                }
+            }
                 
-        @media screen and (min-width: 1200px) {
-             display: flex;
-            flex-wrap: nowrap;
-            gap: 30px;
-        }
-        }
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 30px;
+            }
+           }
 
-img {
+    img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.team__men-item {
-    @media screen and (min-width: 768px) {
-    margin-right: 30px;
+    .team__men-item {
+        @media screen and (max-width: 767px) {
+       margin-bottom: 30px; 
+       margin-right: 0px;
     }
+    // @media screen and (min-width: 768px) {
+    // margin-right: 30px;
+    // }
         @media screen and (min-width: 1200px) {
             margin-right: 0px;
         }
-}
+    }
 
 .team__men-item:last-child {
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 .team__men-item:nth-child(2) {

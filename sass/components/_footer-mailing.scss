@@ -64,6 +64,10 @@
   margin-right: 0px;
 }
 
+// .container-mailing-list__form {
+//   margin-bottom: 60px;
+// }
+
 .container-mailing-list__button {
   display: inline-flex;
   justify-content: flex-start;
@@ -78,6 +82,10 @@
   border-radius: 4px;
   margin-left: 12px;
   border: none;
+    @media screen and (max-width: 1199px) {
+    margin-left: 0px;
+    margin-top: 20px;
+     }
 }
 
 .button__svg {

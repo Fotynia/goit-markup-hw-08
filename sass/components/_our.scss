@@ -3,6 +3,12 @@
         padding-top: 94px;
         padding-bottom: 94px;
         align-items: center;
+          @media screen and (max-width: 767px) {
+            padding: 60px 0px 50px;
+          }
+          @media screen and (max-width: 1199px) {
+             padding: 60px 0px 60px;
+          }
     }
 
        .our-advantages__title--visually-hidden {
@@ -29,9 +35,8 @@
         border:1px solid #EEEEEE;
         border-width: 0px 1px 1px 1px;
         background-color:#F5F4FA;
-        
-        @media screen and (min-width: 768px) {
-          width: 354px;
+            @media screen and (min-width: 768px) {
+                  width: 354px;
          }
 
         @media screen and (min-width: 1200px) {
@@ -46,26 +51,25 @@
       }
 
          .our-advantages__title {
-             font-weight: 700;
-             font-size: 14px;
+            font-weight: 700;
+            font-size: 14px;
             line-height: 1.14;
             text-transform: uppercase;
             color: $color-brend-text;
             margin-bottom: 10px;
-
-          @media screen and (max-width: 767px) {
-            text-align: center;
+              @media screen and (max-width: 767px) {
+                    text-align: center;
+            }
+              @media screen and (min-width: 768px) {
+                       text-align: left;
+            }
           }
-          @media screen and (min-width: 768px) {
-             text-align: left;
-          }
-        }
 
           .our-advantages__list {
                 @media screen and (min-width: 768px) {
                     display: flex;
                     flex-wrap: wrap;
-                    // justify-content: center;
+                    justify-content: center;
                     gap: 30px;
                   }
                   
@@ -91,7 +95,18 @@
                 width: calc((100% - 90px) / 4);
             }
           }
-                         
+
+      .our-advantages__column:last-child {
+        margin-bottom: 0px;   
+      }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            .our-advantages__column:nth-child(3),
+            .our-advantages__column:nth-child(4) {
+            margin-bottom: 0px;
+          }
+         }
+       
        .our-advantages__text {
             line-height: 1.71;
             color: #757575;
@@ -99,6 +114,7 @@
             padding: 0px;
             text-align: left;
         }
+
 
 
 

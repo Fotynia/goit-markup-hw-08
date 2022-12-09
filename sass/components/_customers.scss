@@ -1,7 +1,10 @@
 .customers {
     padding-top: 87px;
     padding-bottom: 101px;
-    background-color: $color-background;      
+    background-color: $color-background; 
+      @media screen and (max-width: 1199px) {
+            padding: 60px 0px 60px;
+      }     
 }
 
 .customers__title {
@@ -27,6 +30,14 @@
  }
 
   .customers__list-card {
+  display: flex;
+  height: 92px;
+  max-width: 170px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
     @media screen and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
    }
@@ -38,16 +49,6 @@
          }
       }
    
-   .customers__list-card {
-    display: flex;
-    height: 92px;
-    width: 170px; 
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    }
-
     .customers__list-card:hover {
         fill: $color-accent;
         border: 1px solid $color-accent;

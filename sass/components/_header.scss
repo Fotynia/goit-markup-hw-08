@@ -9,7 +9,7 @@ body {
 }
 
 .container-header {
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
     display: flex;    
     }
     }
@@ -24,14 +24,11 @@ body {
             font-size: 26px;
             line-height: 1.19;
             text-decoration: none;
-
-             @media screen and (max-width: 767px) {
-                margin-right: 276px;
-                margin-top: 16px;
-                margin-bottom: 16px;
-                margin-left: 15px;
+                @media screen and (max-width: 767px) {
+                     margin-right: 276px;
+                     padding: 16px 0 15px;
              }
-        }
+            }
         
         .logo__word {
             color: $color-brend-text;
@@ -42,5 +39,11 @@ body {
             text-decoration: none;
         }
     
-   
+    .header.logo__word { 
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $color-brend-text;
+   }
     
