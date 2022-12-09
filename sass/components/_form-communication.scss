@@ -1,183 +1,181 @@
 /*  ФОРМА МОДАЛЬНОГО ВІКНА */
 
-    .form-communication {
-        display:block ;
-        width: 528px;
-        height: 581px;
-        margin: auto;
-        padding: 40px;
+.form-communication {
+    display: block;
+    width: 528px;
+    height: 581px;
+    margin: auto;
+    padding: 40px;
 
-        &__title {
-            display: block;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 1.15;
-            text-align: center;
-            color: $color-brend-text;
-            margin-bottom: 16px;
-            }
-    }
-    
-    .form-communication__field {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: #757575;
-       }
-    
-    .form-communication__input {
-        padding-top: 11px;
-        padding-bottom: 11px;
-        padding-left: 42px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 4px;
-        margin-bottom: 10px;
-        margin-top: 4px;
-    }
-    
-    .form-communication__input:hover,
-    .form-communication__input:focus {
-        border: 1px solid $color-accent;
-        border-radius: 4px;
-        cursor: pointer;
-        fill: $color-accent;
-    }
-    
-    .form-communication__svg {
-        display: inline-block;
-        position: absolute;
-        left: 12px;
-        top: 42%;
-        color:$color-brend-text;
-    }
-    
-    .form-communication__field:hover,
-    .form-communication__field:active {
-        border-radius: 4px;
-        cursor: pointer;
-        fill: $color-accent;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-       }
-    
-    
-     /* TEXTAREA */
-    
-    .form-communication__textarea-input {
-        padding: 12px 16px;
-        font-size: 12px;
-        font-family: inherit;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
-        margin-top: 4px;
-        }
-    
-        .form-communication__input [placeholder] {
-        font-size: 12px;
-        line-height: 1.16;
-        letter-spacing: 0.01em;
-        color: rgba(117, 117, 117, 0.5);
-        } 
-      
-        .form-communication__textarea-input {
-            margin-bottom: 20px;
-            margin-top: 4px;
-            resize: none;
-        }
-    
-        .form-communication__textarea-input:not(:placeholder-shown):required:invalid {
-        border-color: $color-accent;
-        }  
-        
-          
-       /* ССИЛКА-КОНТРАКТ */
-    .consent {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        vertical-align: middle;
-        font-size: 14px;
-        line-height: 1.71;
-        color: #757575;
-        margin-right: auto;
-        margin-bottom: 30px;
-       }
-    
-        .consent__checkbox {
-        position: absolute;
-        appearance: none;
-       }
-    
-       input .consent__checkbox {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-       }
-    
-     .consent__checkbox:checked + .consent__icon {
-        background-color: $color-accent;
-        background-image: url(../img/icon-check.svg);
-        background-size: contain;
-        background-origin: border-box;
-        border-color: transparent;
-        background-repeat: no-repeat;
-        margin-right: 7px;
-    }
-        
-    .consent__icon {
-        display: inline-block;
-        background-position: center;
-        width: 15px;
-        height: 16px;
-        border: 1px solid #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 2px; 
-        margin-right: 7px;
-        }
-    
-    .consent__link-contract {
-        font-size: 14px;
-        line-height: 24px;
-        color: $color-accent;
-        padding-left: 10px;
-    }
-    
-    .form-communication__button {
-        display: inline-block;
-        position: absolute;
-        height: 50px;
-        font-family: inherit;
+    &__title {
+        display: block;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-        padding: 10px 52px;
-        color: $color-brend;
-        background: $color-accent;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px; 
-        border: none;
-        margin: auto;
-        left: 32%;
-        bottom: 40px;
-        }
-    
-    .form-communication__button:hover {
-        background: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        cursor: pointer;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        color: $color-brend-text;
+        margin-bottom: 16px;
     }
-    
-    
+}
+
+.form-communication__field {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-communication__input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+.form-communication__input:hover,
+.form-communication__input:focus {
+    border: 1px solid $color-accent;
+    border-radius: 4px;
+    cursor: pointer;
+    fill: $color-accent;
+}
+
+.form-communication__svg {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 42%;
+    color: $color-brend-text;
+}
+
+.form-communication__field:hover,
+.form-communication__field:active {
+    border-radius: 4px;
+    cursor: pointer;
+    fill: $color-accent;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* TEXTAREA */
+
+.form-communication__textarea-input {
+    padding: 12px 16px;
+    font-size: 12px;
+    font-family: inherit;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    margin-top: 4px;
+}
+
+.form-communication__input [placeholder] {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-communication__textarea-input {
+    margin-bottom: 20px;
+    margin-top: 4px;
+    resize: none;
+}
+
+.form-communication__textarea-input:not(:placeholder-shown):required:invalid {
+    border-color: $color-accent;
+}
+
+
+/* ССИЛКА-КОНТРАКТ */
+.consent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.consent__checkbox {
+    position: absolute;
+    appearance: none;
+}
+
+input .consent__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.consent__checkbox:checked+.consent__icon {
+    background-color: $color-accent;
+    background-image: url(../img/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: transparent;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+}
+
+.consent__icon {
+    display: inline-block;
+    background-position: center;
+    width: 15px;
+    height: 16px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.consent__link-contract {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-accent;
+    padding-left: 10px;
+}
+
+.form-communication__button {
+    display: inline-block;
+    position: absolute;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 52px;
+    color: $color-brend;
+    background: $color-accent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin: auto;
+    left: 32%;
+    bottom: 40px;
+}
+
+.form-communication__button:hover {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}

@@ -6,6 +6,15 @@
     width: 570px;
     margin-left: 93px;
   }
+     @media screen and (min-width: 768px) {
+       width: 450px;
+       margin: 0px 159px 0px 159px;
+     }
+         @media screen and (max-width: 767px) {
+           max-width: 450px;
+           width: 100%;
+           margin: 0px 15px 0px 15px;
+         }
 }
 
 .container-mailing-list__title {
@@ -28,6 +37,10 @@
   border-radius: 4px;
   font: inherit;
   background: #2F303A;
+   @media screen and (max-width: 767px) {
+    margin-right: 0px;
+    width: 100%;
+   }
 }
 
     .container-mailing-list__form {

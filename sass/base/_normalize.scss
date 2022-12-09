@@ -27,7 +27,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
     box-sizing: inherit; 
-}
+  }
 
    
 ul {
@@ -68,3 +68,9 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+ img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
