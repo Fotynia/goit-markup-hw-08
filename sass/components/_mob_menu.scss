@@ -3,11 +3,15 @@
 
 .menu-container {
     position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    // max-height: 796px;
+       // max-height: 796px;
     padding: 32px;
     background-color: #FFFFFF;
     z-index: 999;
@@ -99,13 +103,15 @@
         
         // MENU-TOP
         .mob-menu-top__site-nav-list {
-            margin-bottom: 36px;
+            margin-bottom: auto;
+            padding-left: 8px;
+            
         }
 
 .mob-menu-top__mob-item {
         max-width: 139px;
         height: 48px;
-        padding-left: 40px;
+        padding-left: 8px;
         padding-top: 48px;
         font-weight: 500;
         font-size: 40px;
@@ -125,13 +131,13 @@
   }
 
 //   MENU-BOTTOM
-    .mob-menu-bottom {
-        margin-top: 306px;
-    }
+    // .mob-menu-bottom {
+    //     margin-top: 306px;
+    // }
 
     .mob-menu-bottom__contacts{
         text-align: left;
-        padding-left: 40px;
+        padding-left: 8px;
     }
     .mob-menu-bottom__contacts-item {
         margin-bottom: 32px;
@@ -149,11 +155,12 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: $color-accent;
-        text-decoration: none;   
+        text-decoration: none;  
+        width: 100%; 
     }
 
     .mob-menu-bottom__mail {
-    max-width: 231px;
+    width: 231px;
     height: 28px;
     left: 40px;
     margin-top: 32px;
@@ -169,9 +176,9 @@
 //    Twitter Facedook
 
 .mob-menu-bottom_menu-social {
-    display: flex;
-    margin-left: 40px;
-    margin-right: 83px;
+    display: inline-flex;
+    padding-left: 8px;
+    // margin-right: 83px;
     justify-content: space-between;
     margin-top: 64px;
     padding-bottom: 48px;
@@ -187,6 +194,9 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
     padding-left: 10px;
+    width: calc((100% - 60px) / 4);
+    width: 357px;
+    max-width: 100%;
 }
 
 .mob-menu-bottom_soc-item:last-child {
@@ -201,4 +211,5 @@ border-right: none;
 .mob-menu-bottom_soclink {
     text-decoration: none;
     color: $color-accent;
+
 }
