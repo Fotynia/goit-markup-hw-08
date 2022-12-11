@@ -36,10 +36,14 @@
   border-radius: 4px;
   font: inherit;
   background: #2F303A;
-   @media screen and (max-width: 767px) {
-    margin-right: 0px;
-    width: 100%;
-   }
+  //  @media screen and (max-width: 767px) {
+  //   margin-right: 0px;
+  //   width: 100%;
+  //  }
+        @media screen and (max-width: 1199px) {
+          margin-right: 0px;
+          width: 100%;
+        }
 }
 
     .container-mailing-list__form {
